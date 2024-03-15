@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Reino dos Pets - Carrinho</title>
+    <link rel="stylesheet" href="css/stylecarrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+      <a href="index.html">
+        <img id="logo" src="img/reinopets-logo.png" alt="logo">
+      </a>
+
+        <div class="form-pesquisa">
+                <div class="pesquisa">
+                <input class="pesq" type="search" name="pesquisa" placeholder="O que você está procurando?"><button class="button-pesq" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+        </div>
+
+        <nav>
+        <div class="icon"><a href="#"><i class="fa-solid fa-heart"></i> <span>Lista de Desejos</span></a></div>
+        <div class="icon"><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i> <span>Carrinho</span></a></div>
+        <div class="icon"><a href="#"><i class="fa-solid fa-location-dot"></i> <span>Informe seu CEP</span></a></div>
+        <div class="icon"><a href="login.html"><i class="fa-solid fa-user"></i> <span>Entrar | Cadastrar</span></a></div>
+        </nav>
+    </header>
+
+    <main>
+
+    <div class="container-tabela">
+            <div class="tabela">
+                <p id="prod">Produto</p>
+                <p id="pre">Preço</p>
+                <p id="quan">Quantidade</p>
+                <p id="total">Total</p>
+            </div>
+
+        <article>
+            <div class="container-content">
+                <div class="content-prod">
+                    <img src="img/caes7.webp" alt="caes07">
+                    <p>Cama Petz Puff Deep Blue para Cães</p>
+                </div>
+                <div class="content-pre">
+                    <p>R$299,90</p>
+                </div>
+                <div class="content-quan">
+                    <input id="quantidade" type="number" name="quantidade" value="1" min="1">
+                </div>
+                <div class="content-total">
+                    <p>R$299,90</p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="container-content">
+                <div class="content-prod">
+                    <img src="img/gato7.webp" alt="gato07">
+                    <p>Petisco Whiskas Temptations Pelo Saudável para Gatos Adultos 40 g</p>
+                </div>
+                <div class="content-pre">
+                    <p>R$9,45</p>
+                </div>
+                <div class="content-quan">
+                    <input id="quantidade" type="number" name="quantidade" value="1" min="1">
+                </div>
+                <div class="content-total">
+                    <p>R$9,45</p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="container-content">
+                <div class="content-prod">
+                    <img src="img/gato12.webp" alt="gato012">
+                    <p>Brinquedo Cansei de Ser Gato Ratinho com Catnip Cinza</p>
+                </div>
+                <div class="content-pre">
+                    <p>R$39,99</p>
+                </div>
+                <div class="content-quan">
+                    <input id="quantidade" type="number" name="quantidade" value="1" min="1">
+                </div>
+                <div class="content-total">
+                    <p>R$39,99</p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="container-content">
+                <div class="content-prod">
+                    <img src="img/caes11.webp" alt="caes011">
+                    <p>Ração Royal Canin Medium Adult 7+ para Cães Adultos de Porte Médio com 7 Anos ou mais 15kg</p>
+                </div>
+                <div class="content-pre">
+                    <p>R$425,90</p>
+                </div>
+                <div class="content-quan">
+                    <input id="quantidade" type="number" name="quantidade" value="1" min="1">
+                </div>
+                <div class="content-total">
+                    <p>R$425,90</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+        <div class="container-pedido">
+            <div class="pedido">
+                <p id="resumo">Resumo do pedido</p>
+            </div>
+
+            <article>
+                <div class="content-pedido">
+                    <div class="content-subtotal">
+                        <p>Subtotal</p>
+                        <p>R$775,24</p>
+                    </div>
+                    <div class="content-entrega">
+                        <p>Entrega</p>
+                        <p>R$0,00</p>
+                    </div>
+                    <div class="content-pre-total">
+                        <p>Total</p>
+                        <p>R$775,24</p>
+                    </div>
+                    <div class="content-desconto">
+                        <p id="pric">R$775,24</p>
+                        <p id="price-descont">R$697,72</p>
+                    </div>
+                    <p id="pix"><i>Valor com 10% de desconto no boleto ou PIX</i></p>
+
+                    <div class="content-comprar">
+                        <button>Adicionar mais produtos</button>
+                        <button id="fechar-ped">FECHAR PEDIDO</button>
+                    </div>
+                </div>
+            </article>
+
+            <div class="container-cep">
+                <h1>Entrega</h1>
+                <div class="content-cep">
+                    <input id="cep" type="text" name="cep" placeholder="Digite seu CEP" maxlength="9">
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <p id="nao-sei-cep">Não sei meu CEP</p>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </main>
+
+    <footer>
+      <div class="footer-content">
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="sobre-nos.html">Sobre</a></li>
+          <li><a href="#">Loja</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#">Telefones</a></li>
+          <li><a href="#">Chat</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <div class="container-social">
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <span class="texto">Instagram</span>
+        </div>
+        <div class="container-social">
+          <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <span class="texto">Twitter</span>
+        </div>
+        <div class="container-social">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <span class="texto">Facebook</span>
+        </div>
+        </div>
+    </div>
+
+      <div class="footer-info">
+        <p><i>&copy; 2024 Reino dos Pets. Todos os direitos reservados.</i></p>
+      </div>
+    </footer>
+    
+
+</body>
+</html>
