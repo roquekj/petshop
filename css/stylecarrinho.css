@@ -537,6 +537,8 @@ button:hover {
 	justify-content: center;
 	width: 496px;
 	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #b8b8b8;
 }
 
 .content-pag, .content-pag2 {
@@ -549,7 +551,6 @@ button:hover {
 	height: 43px;
 	border: 1px solid #b6b6b6;
 	border-radius: 5px;
-	box-shadow: 2px 2px 5px #b8b8b8;
 	cursor: pointer;
 }
 
@@ -586,8 +587,8 @@ button:hover {
 }
 
 #pag-1 {
-	width: 50px;
-	padding: 5px 8px 4px 8px;
+	width: 52px;
+	padding: 6px 10px 5px 10px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
@@ -608,8 +609,8 @@ button:hover {
 }
 
 #pag-5 {
-	width: 51px;
-	padding: 11px 2px 11px 5px;
+	width: 49px;
+	padding: 10px 1px 10px 1px;
 }
 
 #pag-6 {
@@ -915,8 +916,7 @@ footer {
 	}
 
 	.container-formas-pag {
-		background-color: rgb(255, 255, 255);
-		width: 500px;
+		width: 350px;
 		margin-top: 20px;
 	}
 	
@@ -1064,6 +1064,10 @@ footer {
 	
 	.cor-frete {
 		color: rgb(55, 55, 228);
+	}
+
+	.cupom-container {
+		width: 350px;
 	}
 }
 
@@ -1639,7 +1643,7 @@ footer {
 	
 	#cep {
 		width: 100px;
-		height: 30px;
+		height: 31px;
 		padding: 5px;
 		border-radius: 5px;
 	}
@@ -1801,10 +1805,6 @@ footer {
 		box-shadow: 3px 3px 8px #afafaf;
 		background-color: #f1f1f1;
 	}
-	
-	.cor-frete {
-		color: rgb(55, 55, 228);
-	}
 
 	#name-consulta {
 		margin-top: 5px;
@@ -1812,14 +1812,14 @@ footer {
 	}
 
 	#cupom-input {
-		margin-top: -5px;
+		margin-top: 0px;
 		width: 150px;
-		height: 35px;
+		height: 31px;
 	}
 
 	.content-cep button {
-		margin-top: -5px;
-		height: 34px;
+		margin-top: 0px;
+		height: 30px;
 	}
 
 	#cupom-message {
@@ -1828,6 +1828,10 @@ footer {
 
 	#cupom-message2 {
 		font-size: 14px;
+	}
+
+	.cupom-container {
+		width: 250px;
 	}
 }
 
@@ -2257,6 +2261,132 @@ footer {
 		margin-left: 8px;
 	}
 
+	.container-formas-pag {
+		width: 350px;
+		margin-top: 20px;
+	}
+	
+	.container-formas-pag h2 {
+		display: flex;
+		justify-content: start;
+		margin-bottom: 0px;
+		font-size: 15px;
+	}
+	
+	.formas-pag {
+		flex-direction: column;
+		width: 350px;
+		margin-top: 10px;
+	}
+	
+	.content-pag, .content-pag2 {
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0px;
+		width: 100%;
+		height: 55px;
+		border: 1px solid #b6b6b6;
+		border-radius: none;
+		box-shadow: none;
+		cursor: pointer;
+	}
+	
+	.content-pag {
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 0;
+		border-bottom: none;
+	}
+	
+	.content-pag img {
+		width: 43px;
+	}
+	
+	.content-pag2 {
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 0;
+		border-top: none;
+	}
+	
+	.content-pag2 img {
+		width: 43px;
+	}
+	
+	#pag-1 {
+		width: 67px;
+		padding: 3px 10px 4px 10px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	#pag-2 {
+		width: 63px;
+		padding: 2px 6px 2px 7px;
+	}
+	
+	#pag-3 {
+		width: 62px;
+		padding: 2px 6px 3px 7px;
+	}
+	
+	#pag-4 {
+		width: 63px;
+		padding: 3px 8px 4px 8px;
+	}
+	
+	#pag-5 {
+		width: 93px;
+		padding: 7px 5px 7px 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 0px;	
+	}
+	
+	#pag-6 {
+		width: 67px;
+		padding: 3px 10px 4px 10px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 5px;
+		margin-left: 0px;
+	}
+	
+	#pag-7 {
+		width: 63px;
+		padding: 2px 6px 2px 7px;
+	}
+	
+	#pag-8 {
+		width: 62px;
+		padding: 2px 6px 3px 7px;
+	}
+	
+	#pag-9 {
+		width: 63px;
+		padding: 3px 8px 4px 8px;
+	}
+	
+	#pag-10 {
+		width: 93px;
+		padding: 12px 5px 12px 5px;	
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 5px;
+	}
+	
+	.cupom-container {
+		width: 350px;
+	}
+
+	#cupom-input {
+		margin-top: 0px;
+		width: 150px;
+		height: 40px;
+	}
+
+	.cupom-container h1 {
+		margin-bottom: 5px;
+	}
 }
 
 @media (max-width: 570px) {
@@ -2610,6 +2740,203 @@ footer {
 	#nao-sei-cep {
 		font-size: 0.6em;
 		margin-left: 1px;
+	}
+
+	.container-formas-pag {
+		background-color: rgb(255, 255, 255);
+		width: 250px;
+		margin-top: 15px;
+	}
+	
+	.container-formas-pag h2 {
+		display: flex;
+		justify-content: start;
+		margin-bottom: 0px;
+		font-size: 12px;
+	}
+	
+	.formas-pag {
+		flex-direction: column;
+		width: 250px;
+		margin-top: 5px;
+	}
+	
+	.content-pag, .content-pag2 {
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0px;
+		width: 100%;
+		height: 35px;
+		border: 1px solid #b6b6b6;
+		border-radius: none;
+		box-shadow: none;
+		cursor: pointer;
+	}
+	
+	.content-pag {
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 0;
+		border-bottom: none;
+	}
+	
+	.content-pag img {
+		width: 43px;
+	}
+	
+	.content-pag2 {
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 0;
+		border-top: none;
+	}
+	
+	.content-pag2 img {
+		width: 43px;
+	}
+	
+	#pag-1 {
+		width: 51px;
+		padding: 3px 10px 2px 12px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 0px;
+	}
+	
+	#pag-2 {
+		width: 43px;
+		padding: 2px 5px 1px 7px;
+	}
+	
+	#pag-3 {
+		width: 43px;
+		padding: 2px 6px 2px 7px;
+	}
+	
+	#pag-4 {
+		width: 44px;
+		padding: 3px 8px 3px 8px;
+	}
+	
+	#pag-5 {
+		width: 68px;
+		padding: 2px 5px 3px 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 0px;	
+	}
+	
+	#pag-6 {
+		width: 51px;
+		padding: 3px 10px 2px 12px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 5px;
+		margin-left: 0px;
+	}
+	
+	#pag-7 {
+		width: 43px;
+		padding: 2px 5px 1px 7px;
+	}
+	
+	#pag-8 {
+		width: 43px;
+		padding: 2px 6px 2px 7px;
+	}
+	
+	#pag-9 {
+		width: 44px;
+		padding: 3px 8px 3px 8px;
+	}
+	
+	#pag-10 {
+		width: 68px;
+		padding: 6px 5px 6px 5px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 5px;
+	}
+
+	.content-frete {
+		flex-direction: column;
+		gap: 0px;
+	}
+	
+	#end {
+		width: 250px;
+		height: 50px;
+		padding: 5px;
+		margin-top: 8px;
+		font-size: 12px;
+	}
+	
+	#economico, #expresso {
+		margin-top: 8px;
+		margin-bottom: 0px;
+		line-height: 1.4;
+	}
+	
+	#eco {
+		width: 250px;
+		height: 80px;
+		padding: 7px 20px 0px 25px;
+		font-size: 15px;
+	}
+	
+	#eco:hover {
+		transform: scale(1.006);
+		box-shadow: 3px 3px 8px #afafaf;
+		background-color: #f1f1f1;
+	}
+	
+	.cor-frete {
+		color: rgb(55, 55, 228);
+	}
+
+	#name-consulta {
+		margin-top: 5px;
+		font-size: 15px;
+	}
+
+	#cupom-input {
+		margin-top: -5px;
+		width: 150px;
+		height: 35px;
+	}
+
+	.content-cep button {
+		margin-top: -5px;
+		height: 34px;
+	}
+
+	#cupom-message {
+		font-size: 12px;
+	}
+
+	#cupom-message2 {
+		font-size: 14px;
+	}
+
+	.cupom-container {
+		width: 250px;
+	}
+
+	#cupom-input {
+		margin-top: 0px;
+		width: 150px;
+		height: 31px;
+	}
+
+	.cupom-container h1 {
+		margin-bottom: 5px;
+	}
+
+	.content-cep button {
+		margin-top: 0px;
+		height: 30px;
+	}
+
+	#cep {
+		height: 31px;
 	}
 }
 
