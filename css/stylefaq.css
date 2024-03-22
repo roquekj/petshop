@@ -128,13 +128,17 @@ nav {
     font-size: 20px;
 }
 
+main {
+	min-height: 70vh;
+}
+
 .l-cards {
 	display: grid;
 	grid-gap: 40px;
-	grid-template-columns: repeat(3, 300px);
-	grid-template-columns: repeat(auto-fit, 300px);
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	justify-content: left;
+	grid-template-columns: repeat(4, 400px);
+	grid-template-columns: repeat(auto-fit, 400px);
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	justify-content: center;
 	justify-items: center;
 	padding: 80px;
 }
@@ -148,8 +152,9 @@ nav {
 	border-bottom-right-radius: 17px;
 	display: flex;
 	flex-direction: column;
-	width: 320px;
-	height: 280px;
+	width: 370px;
+	height: 300px;
+	transition: 0.6s all ease;
 }
 
 .card-top {
@@ -450,7 +455,7 @@ footer {
 	.c-card {
         margin-top: 15px;
 		width: 160px;
-		height: 220px;
+		height: 280px;
 	}
 
     .card-top {

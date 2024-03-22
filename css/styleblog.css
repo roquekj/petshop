@@ -125,16 +125,16 @@ nav {
 }
 
 .post {
-    border-radius: 10px;
+    border-radius: 14px;
 	width: 100%;
 }
 
 .l-cards {
 	display: grid;
 	grid-gap: 40px;
-	grid-template-columns: repeat(3, 300px);
-	grid-template-columns: repeat(auto-fit, 300px);
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(4, 400px);
+	grid-template-columns: repeat(auto-fit, 400px);
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	justify-content: center;
 	justify-items: center;
 	padding: 80px;
@@ -142,13 +142,15 @@ nav {
 
 .c-card {
 	background-color: transparent;
-	border-radius: 12px;
+	border-radius: 15px;
 	border: 2px solid #202020;
 	box-shadow: 8px 8px 10px #888888;
+	border-bottom-left-radius: 17px;
+	border-bottom-right-radius: 17px;
 	display: flex;
 	flex-direction: column;
-	width: 300px;
-	height: 300px;
+	width: 370px;
+	height: 370px;
 	transition: 0.6s all ease;
 }
 

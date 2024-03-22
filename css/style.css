@@ -526,10 +526,10 @@ footer {
 	.l-cards {
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: repeat(2, 160px);
-		grid-template-columns: repeat(auto-fit, 160px);
-		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-		padding: 25px;
+		grid-template-columns: repeat(2, 170px);
+		grid-template-columns: repeat(auto-fit, 170px);
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+		padding: 15px;
 	}
 
 	.c-card {
