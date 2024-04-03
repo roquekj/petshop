@@ -180,6 +180,193 @@ input:valid ~ label {
     color: white;
 }
 
+.caixa-form2 {
+    position: relative;
+    width: 430px;
+    height: 480px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+}
+
+.logologin2 {
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+    width: 300px;
+    margin-bottom: 50px
+}
+
+.inputbox2 {
+    position: relative;
+    margin: 25px 0 10px;
+    width: 310px;
+    height: 40px;
+    border-bottom: 2px solid #000000;
+    border-radius: 5%;
+}
+
+.inputbox2 label {
+    position: absolute;
+    top: 70%;
+    left: 2px;
+    transform: translateY(-50%);
+    color: #00000056;
+    font-size: 15px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+        top: 2px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+}
+
+.inputbox2 input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding:0 35px 0 5px;
+    color: #000000;
+}
+
+#ico-user2, #ico-email2, #ico-lock2 {
+    position: absolute;
+    right: 10px;
+    color: #000000;
+    font-size: 14px;
+}
+
+#ico-user2 {
+    top: 23px;
+}
+
+#ico-email2 {
+    top: 26px;
+}
+
+#ico-lock2 {
+    top: 24px;
+}
+
+.cadastrar {
+    margin-top: 40px;
+    color: rgb(255, 235, 235);
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border-color: #ffffff00;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.6s all ease;
+}
+
+.cadastrar:hover {
+    color: rgb(255, 235, 235);
+    background-color: rgb(0, 17, 170);
+    border-color: rgba(255, 0, 0, 0);
+}
+
+.voltar {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    background: rgba(200, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.6s all ease;
+}
+
+.voltar:hover {
+    color: rgba(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(0, 0, 0);
+}
+
+@media (max-width: 605px) {
+
+    .caixa-form2 {
+        width: 300px;
+        height: 350px;
+    }
+
+    .logologin2 {
+        margin-top: 25px;
+        width: 240px;
+        margin-bottom: 25px;
+    }
+    
+    .inputbox2 {
+        margin: 14px 0 10px;
+        width: 240px;
+        height: 40px;
+    }
+    
+    .inputbox2 label {
+        top: 70%;
+        left: 2px;
+        transform: translateY(-50%);
+        font-size: 12px;
+    }
+
+    input:focus ~ label,
+    input:valid ~ label {
+        top: 5px;
+        font-size: 12px;
+    }
+
+    .inputbox2 input {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+        padding:0 35px 0 5px;
+    }
+
+    #ico-user2, #ico-email2, #ico-lock2 {
+        right: 5px;
+        font-size: 11px;
+    }
+
+    #ico-user2 {
+        top: 28px;
+    }
+    
+    #ico-email2 {
+        top: 29px;
+    }
+    
+    #ico-lock2 {
+        top: 27px;
+    }
+
+    .cadastrar {
+        margin-top: 20px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .voltar {
+        margin-top: 5px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+}
+
 @media (max-width: 605px) {
 
     .caixa-form {
