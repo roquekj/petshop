@@ -4,6 +4,136 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#product{
+	display: flex;
+	border-bottom: 1px solid black;
+	margin-top: 15px;
+	border-radius: 10px;
+	width: 800px;
+}
+.product-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 500px;
+}
+#itemImg{
+	width: 150px;
+	margin-left: 10px;
+}
+#itemName{
+	width: 55%;
+	text-align: justify;
+	margin-right: 50px;
+	font-size: 16px;
+}
+
+#itemPrice {
+	font-size: 17px;
+}
+
+.product-price {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+}
+
+.button-group {
+	width: 150px;
+}
+#itemQnt{
+	font-size: 17px;
+	padding-top: 1px;
+	width: 30px;
+	height: 35px;
+	text-align: center;
+	border: 1px solid black;
+	border-left: none;
+	border-right: none;
+	margin-top: 55px;
+}
+#increaseBtn {
+	font-size: 15px;
+	padding-top: 1px;
+	width: 25px;
+	height: 35px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid black;
+	border-left: none;
+	cursor: pointer;
+}
+#decreaseBtn {
+	font-size: 17px;
+	padding-top: 1px;
+	width: 25px;
+	height: 35px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 1px solid black;
+	border-right: none;
+	margin-left: 35px;
+	cursor: pointer;
+}
+.remove-text{
+	font-size: 15px;
+	margin-left: 45px;
+	margin-top: 3px;
+	color: black;
+	cursor: pointer;
+}
+.remove-text:hover{
+	text-decoration: underline;
+}
+
+.container-carrinho-vazio {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: 100%;
+	height: 800px;
+}
+
+.carrinho-vazio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#cart-imagem {
+	width: 200px;
+	margin-top: 200px;
+}
+
+#cart-name-vazio {
+	margin-top: 20px;
+	font-size: 22px;
+}
+
+#cart-explorando {
+	font-size: 20px;
+	width: 350px;
+	height: 50px;
+	border-radius: 10px;
+	color: white;
+	background-color: rgb(0, 0, 210);
+	border: 1px solid black;
+	cursor: pointer;
+	margin-bottom: 100px;
+}
+
+#endereco {
+	margin: 3px;
+	font-size: 15px;
+}
 
 header {
     display: flex;
@@ -126,20 +256,21 @@ main {
 }
 
 #prod {
-    width: 400px;
+    width: 500px;
     border-right: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 #pre {
-    width: 200px;
+    width: 150px;
     border-right: none;
 }
 
 #quan {
-    width: 240px;
-    border-right: none;
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #total {
@@ -1102,27 +1233,7 @@ footer {
 	.tabela p {
 		font-size: 18px;
 	}
-	
-	#prod, #pre, #quan, #total {
-		height: 40px;
-	}
-	
-	#prod {
-		width: 250px;
-	}
-	
-	#pre {
-		width: 100px;
-	}
-	
-	#quan {
-		width: 150px;
-	}
-	
-	#total {
-		width: 100px;
-	}
-	
+
 	.container-content {
 		margin-top: 10px;
 		margin-bottom: 30px;
@@ -1230,6 +1341,12 @@ footer {
   }
 
 @media (max-width: 1260px) {
+	main {
+		display: block;
+	}
+}
+
+@media (max-width: 1260px) {
 
 	.container-tabela {
 		margin-left: 60px;
@@ -1241,26 +1358,6 @@ footer {
 
 	.tabela p {
 		font-size: 18px;
-	}
-	
-	#prod, #pre, #quan, #total {
-		height: 40px;
-	}
-	
-	#prod {
-		width: 250px;
-	}
-	
-	#pre {
-		width: 100px;
-	}
-	
-	#quan {
-		width: 150px;
-	}
-	
-	#total {
-		width: 100px;
 	}
 	
 	.container-content {
@@ -1338,35 +1435,6 @@ footer {
 		border-left: none;
 		border-right: none;
 	}
-	
-	.content-quan #quantity1, #quantity2, #quantity3, #quantity4, #quantity5 {
-		font-size: 17px;
-		border-radius: 0px;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-max1, #btn-min2, #btn-max2, #btn-min3, #btn-max3, #btn-min4, #btn-max4, #btn-min5, #btn-max5 {
-		width: 30px;
-		height: 30px;
-		font-size: 20px;
-		padding: 2px 10px;
-		cursor: pointer;
-		line-height: 1;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-min2, #btn-min3, #btn-min4, #btn-min5 {
-		padding-bottom: 8px;
-		border-right: none;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-	
-	#btn-max1, #btn-max2, #btn-max3, #btn-max4, #btn-max5 {
-		border-left: none;
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
   }
 
 
@@ -1396,26 +1464,6 @@ footer {
 
 	.tabela p {
 		font-size: 15px;
-	}
-	
-	#prod, #pre, #quan, #total {
-		height: 30px;
-	}
-	
-	#prod {
-		width: 200px;
-	}
-	
-	#pre {
-		width: 80px;
-	}
-	
-	#quan {
-		width: 110px;
-	}
-	
-	#total {
-		width: 70px;
 	}
 	
 	.container-content {
@@ -1493,34 +1541,6 @@ footer {
 		border-right: none;
 	}
 	
-	.content-quan #quantity1, #quantity2, #quantity3, #quantity4, #quantity5 {
-		font-size: 17px;
-		border-radius: 0px;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-max1, #btn-min2, #btn-max2, #btn-min3, #btn-max3, #btn-min4, #btn-max4, #btn-min5, #btn-max5 {
-		width: 20px;
-		height: 30px;
-		font-size: 20px;
-		padding: 2px 0px;
-		cursor: pointer;
-		line-height: 1;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-min2, #btn-min3, #btn-min4, #btn-min5 {
-		padding-bottom: 8px;
-		border-right: none;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-	
-	#btn-max1, #btn-max2, #btn-max3, #btn-max4, #btn-max5 {
-		border-left: none;
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
 }
 
 @media (max-width: 910px) {
@@ -1859,26 +1879,6 @@ footer {
 		font-size: 12px;
 	}
 	
-	#prod, #pre, #quan, #total {
-		height: 25px;
-	}
-	
-	#prod {
-		width: 100px;
-	}
-	
-	#pre {
-		width: 60px;
-	}
-	
-	#quan {
-		width: 80px;
-	}
-	
-	#total {
-		width: 60px;
-	}
-	
 	.container-content {
 		margin-top: 10px;
 		margin-bottom: 30px;
@@ -1957,34 +1957,6 @@ footer {
 		border-right: none;
 	}
 	
-	.content-quan #quantity1, #quantity2, #quantity3, #quantity4, #quantity5 {
-		font-size: 17px;
-		border-radius: 0px;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-max1, #btn-min2, #btn-max2, #btn-min3, #btn-max3, #btn-min4, #btn-max4, #btn-min5, #btn-max5 {
-		width: 20px;
-		height: 25px;
-		font-size: 17px;
-		padding: 1px 0px;
-		cursor: pointer;
-		line-height: 1;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-min2, #btn-min3, #btn-min4, #btn-min5 {
-		padding-bottom: 8px;
-		border-right: none;
-		border-top-left-radius: 8px;
-		border-bottom-left-radius: 8px;
-	}
-	
-	#btn-max1, #btn-max2, #btn-max3, #btn-max4, #btn-max5 {
-		border-left: none;
-		border-top-right-radius: 8px;
-		border-bottom-right-radius: 8px;
-	}
 }
 
 @media (max-width: 630px) {
@@ -1994,26 +1966,6 @@ footer {
 
 	.tabela p {
 		font-size: 18px;
-	}
-	
-	#prod, #pre, #quan, #total {
-		height: 40px;
-	}
-	
-	#prod {
-		width: 250px;
-	}
-	
-	#pre {
-		width: 90px;
-	}
-	
-	#quan {
-		width: 120px;
-	}
-	
-	#total {
-		width: 90px;
 	}
 	
 	.container-content {
@@ -2153,29 +2105,6 @@ footer {
 		font-size: 17px;
 		border-radius: 0px;
 		text-align: center;
-	}
-	
-	#btn-min1, #btn-max1, #btn-min2, #btn-max2, #btn-min3, #btn-max3, #btn-min4, #btn-max4, #btn-min5, #btn-max5 {
-		width: 25px;
-		height: 30px;
-		font-size: 20px;
-		padding: 2px 0px;
-		cursor: pointer;
-		line-height: 1;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-min2, #btn-min3, #btn-min4, #btn-min5 {
-		padding-bottom: 8px;
-		border-right: none;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-	
-	#btn-max1, #btn-max2, #btn-max3, #btn-max4, #btn-max5 {
-		border-left: none;
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
 	}
 	
 	.content-desconto {
@@ -2480,26 +2409,6 @@ footer {
 		font-size: 12px;
 	}
 	
-	#prod, #pre, #quan, #total {
-		height: 25px;
-	}
-	
-	#prod {
-		width: 100px;
-	}
-	
-	#pre {
-		width: 60px;
-	}
-	
-	#quan {
-		width: 80px;
-	}
-	
-	#total {
-		width: 60px;
-	}
-	
 	.container-content {
 		margin-top: 10px;
 		margin-bottom: 30px;
@@ -2576,35 +2485,6 @@ footer {
 		height: 20px;
 		border-left: none;
 		border-right: none;
-	}
-	
-	.content-quan #quantity1, #quantity2, #quantity3, #quantity4, #quantity5 {
-		font-size: 12px;
-		border-radius: 0px;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-max1, #btn-min2, #btn-max2, #btn-min3, #btn-max3, #btn-min4, #btn-max4, #btn-min5, #btn-max5 {
-		width: 15px;
-		height: 20px;
-		font-size: 16px;
-		padding: 1px 0px;
-		cursor: pointer;
-		line-height: 1;
-		text-align: center;
-	}
-	
-	#btn-min1, #btn-min2, #btn-min3, #btn-min4, #btn-min5 {
-		padding-bottom: 8px;
-		border-right: none;
-		border-top-left-radius: 8px;
-		border-bottom-left-radius: 8px;
-	}
-	
-	#btn-max1, #btn-max2, #btn-max3, #btn-max4, #btn-max5 {
-		border-left: none;
-		border-top-right-radius: 8px;
-		border-bottom-right-radius: 8px;
 	}
 
 	.container-pedido {
